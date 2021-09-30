@@ -1,0 +1,43 @@
+.progressbar_container{
+    width: 100%;
+    height: auto;
+    padding: 1rem 0;
+}
+
+
+.progress_div{
+    width: 100%;
+    height: 0.5rem;
+    box-shadow: 0 1px 2px #717171;
+    border-radius: 4rem;
+    position: relative;
+    margin-top: 0.5rem;
+    transition: all 1s linear;
+}
+
+.progress{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: #454545;
+    height: 0.5rem;
+    box-shadow: 0 1px 2px #212121;
+    border-radius: 4rem;
+    transition: all 1s linear;
+    
+}
+
+
+.progress_duration_meter{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+}
+
+.music-logo,.music-controls{
+    width: fit-content;
+    margin: auto;
+}
+

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Musicplayer</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="musicplayer.css">
+    <link rel="shortcut icon" href="heart.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+</head>
+<body >
+    <div>
+        <h1 style="text-align: center;">Music player</h1>
+        <div class="music-player">
+            <div class="music-logo">
+                <img src="./music-banner.jpg" alt="sdfds" height="200px" width="200px">
+            </div>
+            <div id="song-name"><marquee id="song-namea" scrollamount="2"></marquee></div>
+            <div class="music-timeline">
+                <div class="progressbar_container">
+                    <div class="progress_duration_meter">
+                        <div id="current_time">
+                            0:00
+                        </div>
+                        <div id="duration">
+                            0:00
+                        </div>
+                    </div>
+                    <div class="progress_div" id="progress_div">
+                        <div class="progress" id="progress"></div>
+                    </div>
+                </div>
+                <audio id="music-main" src="" ></audio>
+            </div>
+            
+            <div class="music-controls">
+                <span id="previous"><i class="fas fa-step-backward"></i></span>
+                <span id="play"><i  class="fas fa-play"></i></span>
+                <span id="next"><i class="fas fa-step-forward"></i></span>
+            </div>
+        </div>
+    </div>
+    <aside class="switch-theme">
+        Theme switch
+    </aside>
+    <script src="index.js"></script>
+    <script src="musicplayer.js"></script>
+</body>
+</html>

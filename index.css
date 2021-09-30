@@ -1,0 +1,60 @@
+[data-theme="dark"]{
+    --backColor:#212121;
+    --textColor:white;
+}
+[data-theme="light"]{
+    --backColor:#fff;
+    --textColor:#212121;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+html,body{
+    padding: 0%;
+    margin: 0%;
+    background-color: var(--backColor) ;
+    color: var(--textColor);
+    transition: background-color 0.3s ease-in-out;
+}
+
+input[type="Checkbox"]{
+    opacity: 0;
+}
+
+.switch-theme{
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+.music-controls i{
+    font-size: 30px;
+    padding: 17px;
+    margin: 2px;
+}
+
+.music-controls i:active{
+    color: rgb(145, 145, 145);
+    transition: all 0.4s;
+}
+
+#song-name{
+    width: 113px;
+    margin-left: 35px;
+}
+
+.switch-theme{
+    border: 1px solid var(--backColor);
+    width: fit-content;
+    border-radius: 12px;
+    padding: 4px;
+    box-shadow: 0px 0px 10px 0px var(--textColor);
+    outline: none;
+    margin: auto;
+}
+
+#song-name{
+    width: auto;
+    margin: auto;
+}
