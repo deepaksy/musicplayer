@@ -67,3 +67,8 @@ progressArea.addEventListener("click",(e)=>{
     musicPlayer.play();
   }
 });
+
+
+var progressBar = document.querySelector('#progress');
+
+progressBar.style.onhouver
