@@ -51,3 +51,19 @@ function previousSong(){
 //Event trigger for next
 previous.addEventListener('click',previousSong);
 next.addEventListener('click',nextSong);
+
+
+//ProgressArea seek
+
+var progressArea = document.querySelector('#progress_div');
+
+progressArea.addEventListener("click",(e)=>{
+  let progressWidth = progressArea.clientWidth;
+  let clickedOffsetX=e.offsetX;
+  let songDuration = musicPlayer.duration;
+
+  musicPlayer.currentTime = (clickedOffsetX/progressWidth)*songDuration;
+  if(!musicPlayer.paused){
+    musicPlayer.play();
+  }
+});
