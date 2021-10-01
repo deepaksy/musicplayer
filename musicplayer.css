@@ -41,3 +41,14 @@
     margin: auto;
 }
 
+.music-player{
+    width: 50%;
+    margin: auto;
+}
+
+@media only screen and (max-width:460px) {
+    .music-player{
+        width: 95%;
+        margin: auto;
+    }
+}
